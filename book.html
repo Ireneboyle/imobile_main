@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMobile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  -->
+    
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="index.html"><span>i</span>Mobile Clinic</a></h1>
+                <!-- <img src="" alt=""> -->
+            </div>
+            <nav class="nav">
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+               
+                    <button class="book-btn"><a href="book.html">BOOK ONLINE</a></button>
+                </ul>
+            </nav>
+           <!-- <a href="cart.html"> <img src="assets/cart.png"  width="30px" height="30px"></a> -->
+            <img src="assets/burger_line_list_menu_nav_navigation_option_icon_123231.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+       
+
+    
+    </div>
+    </div>
+
+
+    <div class="form-wrap">
+        <div class="services-header">
+            <h2 class= "title">  Book Appointment</h2>
+
+
+
+
+
+
+
+
+           <!-- biodata form-->
+           <form>
+             <div class="form-book">
+           <div class="container">
+            <div class="form-floating mb-3 ">
+                <input type="email" class="form-control" id="floatingInput" placeholder="John Doe">
+                <label for="floatingInput">Full name</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select age</option>
+                <option value="1">0-12years</option>
+                <option value="2">13-17year</option>
+                <option value="3">18 and above</option>
+              </select>
+            </div>
+
+            <div class="services-header">
+                <h2 class="title">Choose a Service</h2>
+            </div>
+          
+           <div class="container">
+            <div class="form-check form-check-inline check-form">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Comprehensive eye exam</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Pediatric eye exam</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Glaucoma evaluations</label>
+              </div>
+              </div>
+              <div class="container">
+              <div class="form-check form-check-inline check-form">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Lazy eye(Amblyopia) treatment</label>
+              </div>
+              <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Dry eye treatment</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Lasik surgeries</label>
+              </div>
+             
+           </div>
+           <div class="container">
+
+            <div class="form-check form-check-inline check-form">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Diabetic eye exams</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Eye emergencies</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Cataract</label>
+              </div>
+              
+           </div>
+
+           <div class="container">
+            <div class="form-check form-check-inline form-input check-form">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Do you belong to any HMO?</label>
+              </div>
+             
+            
+          
+        
+              <div class="container">
+                <select class="form-select " aria-label="Default select example">
+                    <option selected>Choose HMO</option>
+                    <option value="1">Axa Mansard</option>
+                    <option value="2">Anchor</option>
+                    <option value="3">Hygeia</option>
+                    <option value="3">Avon</option>
+                  </select>
+              </div>
+             <div class="container">
+                <button type="button" class="btn btn-primary form-btn">Book now</button>
+             </div>
+            </div>
+        </div>
+            </form>
+
+            </div>
+    </div>
+
+              
+             
+          
+        
+
+
+ <!-- our partners -->
+ <div class="brands">
+    <div class="small-container">
+        <h2 class='title'>HMO Partners</h2>
+        <div class="row">
+            <div class="col-5">
+                <img src="assets/mansard.jpg" alt="">
+            </div>
+            <div class="col-5">
+               <img src="assets/avon.png" alt="">
+           </div>
+           <div class="col-5">
+               <img src="assets/hygea.png" alt="">
+           </div>
+           <div class="col-5">
+ 
+ 
+               <img src="assets/reliance.jpg.crdownload" alt="">
+           </div>
+           <div class="col-5">
+               <img src="assets/anchor.png" alt="">
+           </div>
+        </div>
+    </div>
+</div>
+
+
+
+ <!-- footer -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p> 
+                  <div class="app-logo">
+                      <img src="assets/google.png" alt="">
+                      <img src="assets/appstore.png" alt="">
+                  </div>  
+
+            </div>
+            <div class="footer-col-2">
+             <img src="assets/footerlogo.jpg" alt="">
+             <p>Your eye health, our priority.</p> 
+           
+
+            </div>
+            <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join affiliate</li>
+            </ul>
+                 <p>our purposeorem ipsum dolor sit amet consectetur adipisicing .</p> 
+        
+
+        </div>
+      
+       <div class="footer-col-4">
+       <h3>Follow us</h3>
+       <ul>
+           <li>Facebook</li>
+           <li>Twitter</li>
+           <li>Instagram</li>
+           <li>Youtube</li>
+       </ul>
+           
+
+   </div>
+ </div>
+ <hr>
+ <p class="copyright"> Copyright 2021- IreneBoyle</p>
+
+
+
+
+    </div>
+</div>
+
+<!-- js for toggle -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(  MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else{
+           MenuItems.style.maxHeight = "0px"
+
+        }
+    }
+</script>
+
+</body>
+</html>
+
+       
+ 
+ 
+ 
