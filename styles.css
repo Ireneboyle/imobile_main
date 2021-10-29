@@ -230,6 +230,21 @@ h4{
     color: #555;
 
 }
+/*booking*/
+.booking{
+    margin-top: 70px;
+}
+.form-btn{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 600px;
+
+        
+        
+    
+}
+
 /* contact us page */
 .contact-t{
     font-weight: bold;
